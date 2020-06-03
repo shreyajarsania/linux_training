@@ -1,0 +1,3 @@
+Program("6twopro.c") 
+Program("6twocon.c")
+Program("6one.c")

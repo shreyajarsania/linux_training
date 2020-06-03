@@ -1,0 +1,4 @@
+What is copy on write? How fork uses it? What is the benefit of using it?
+
+copy on write is a concept used when we use exec function. here when the process is called, the copy of process is not generated, each process just points to that single process. when there si some change in process, the just for that process a copy is generated with changes and all other process points to single copy.
+This function can be maintained until a caller tries to modify its "copy" of the resource, at which point a true private copy is created to prevent the changes becoming visible to everyone else. All of this happens transparently to the callers. The primary advantage is that if a caller never makes any modifications, no private copy need ever be created.  All processes are sharing the same set of pages and each one gets its own private copy when it wants to modify a page.

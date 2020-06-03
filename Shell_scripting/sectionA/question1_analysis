@@ -1,0 +1,39 @@
+we can change permission to only user for directory by - chmod 700 shreya
+Here 700 means read+write+execution permission to user and no permssions to group or owner
+
+output:
+total 8
+drwx------ 2 pvips-guest pvips-guest 4096 Jan 23 17:08 shreya
+
+we can do same for each file as well-
+ for a.txt and b.txt - chmod 600 a.txt
+		     - chmod 600 b.txt
+ for c.txt - chmod 200 c.txt
+
+for d to be only executable - chmod 100 d.sh
+ but by this permssion will be denied
+
+output: -ls -l
+total 4
+-rw------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 a.txt
+-rw------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 b.txt
+--w------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 c.txt
+---x------ 1 pvips-guest pvips-guest 16 Jan 23 17:05 d.sh
+
+
+hence to get the output change d permssions to read and executable - chmod 500 d.sh
+total 4
+
+output: -ls -l 
+-rw------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 a.txt
+-rw------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 b.txt
+--w------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 c.txt
+-r-x------ 1 pvips-guest pvips-guest 16 Jan 23 17:05 d.sh
+
+
+output of exectuated file:
+total 4.0K
+-rw------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 a.txt
+-rw------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 b.txt
+--w------- 1 pvips-guest pvips-guest  0 Jan 23 16:53 c.txt
+-r-x------ 1 pvips-guest pvips-guest 16 Jan 23 17:05 d.sh

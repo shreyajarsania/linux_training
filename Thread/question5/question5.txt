@@ -1,0 +1,7 @@
+What you learn from this exercise. write down point wise.
+
+points learned are:
+- thread copies only stack memory
+- it is very important to keenly use sleep()
+- thread shares all its resources except function's local variables
+- priorities the thread using thread attributes

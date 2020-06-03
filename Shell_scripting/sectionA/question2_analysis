@@ -1,0 +1,11 @@
+Q: Change the permission of the previous directory to executable only.
+Analyze the output.
+
+
+chmod 100 shreya
+
+directory opens up but does not list files in it as well as being a directory, cannot execute.
+
+output: ls -l
+total 12
+d--x------ 2 pvips-guest pvips-guest 4096 Jan 23 17:08 shreya

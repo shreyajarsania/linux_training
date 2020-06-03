@@ -1,0 +1,10 @@
+Q. What is the difference between semaphore and mutex? Where to use individuals?
+
+ANSWER:
+
+DIFFERENCE:
+	-Semaphore is used to synchronize mutiple processes, whereas mutex is used to ensure that only one process works at a time.
+	-Semapohre is integer variable, whereas mutex is an object
+	-Mutex locks the individual identity of the process whereas semaphore does not
+USE:	
+	-Use mutex where you want to allow a piece of code to be executed by one thread at a time. Use semaphore to signal/notify about some event.

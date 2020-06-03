@@ -1,0 +1,11 @@
+Q. Understanding of thread and process, difference between both.
+
+ANSWER:
+
+	Process means any program is in execution while thread means only the segment of process is in execution.
+
+	Process takes more time to create, switch as well as terminate while thread takes less times comparitively.
+	Process do not share resources and is totally independent, thread shares resources.
+	System calls can be invoked in process, while cannot be invoked in thread.
+	Process have overhead while thread do not have overhead.
+	

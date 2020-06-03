@@ -1,0 +1,7 @@
+env = Environment()
+import os
+
+
+for x in os.listdir('.'):
+    if os.path.isdir( x ):
+        env.SConscript( x +'/SConscript', exports='env')
