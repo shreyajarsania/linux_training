@@ -1,0 +1,3 @@
+Try to kill init process (with pid 1) from your command line(using kill command) or using kill() system call inside one of your processes.what is the result ? comment on the same.
+
+We cannot kill a process using kill 1 - SIGINT. every time we try to kill a process with SIGINT, it changes its command value.

@@ -1,0 +1,26 @@
+Q. Explain the concept of concurrency
+   -> Need
+   -> Benifit
+   -> Types
+   -> Methods of implementation
+   -> Explain concurrency using an example(take some example outside of the reading material provided)
+
+ANSWER:
+	Having 2 or more process working at a time is called concurrency.
+NEED:
+	-when we want to execute two different process togather at same time
+	-when we want to have a backup of the program or its perticular resources then we can use concurrency.
+
+BENIFITS:
+	-decrease waiting and response time
+	-better resource utilization
+TYPES:
+	to control concurrency:
+		Mutex
+		Semaphore
+		Perterson's algorithm
+METHODS:
+	thread
+
+EXAMPLE:
+	Railway Networks - Railway tracks must be shifted only when a perticular train has passed through, and shifted before a perticular train uses it. Algorithm must be synchronised properly for this purpose.

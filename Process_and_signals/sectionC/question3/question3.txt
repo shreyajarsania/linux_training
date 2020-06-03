@@ -1,0 +1,12 @@
+use command - sudo renice 10 17549
+change priority to 10
+OUTPUT:
+
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000  7534  2608  0  80   0 - 248415 futex_ tty2    00:00:00 rhythmbox
+4 S  1000  7626  2608  0  90  10 - 729295 poll_s tty2    00:00:03 firefox
+4 S  1000  7678  7626  0  80   0 - 657650 poll_s tty2    00:00:00 Web Content
+4 S  1000  7729  7626  0  80   0 - 646585 poll_s tty2    00:00:00 WebExtensions
+4 S  1000  7774  7626  0  80   0 - 640581 poll_s tty2    00:00:00 Web Content
+1 S  1000  8046  3044  0  80   0 - 350179 futex_ tty2    00:00:00 chromium-browse
+4 R  1000  8125  8022  0  80   0 -  7228 -      pts/4    00:00:00 ps

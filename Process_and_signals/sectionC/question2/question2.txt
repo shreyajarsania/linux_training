@@ -1,0 +1,10 @@
+use command - sudo nice -n 19 shotwell
+lowest priority is 19
+
+OUTPUT:
+
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000  9588  9294  0  80   0 - 13915 poll_s pts/0    00:00:00 vi
+4 S     0  9669  9608  0  80   0 - 16461 -      pts/1    00:00:00 sudo
+4 S     0  9670  9669  4  99  19 - 290616 -     pts/1    00:00:00 shotwell
+4 R  1000  9696  9685  0  80   0 -  7228 -      pts/3    00:00:00 ps
